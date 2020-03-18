@@ -21,7 +21,7 @@ export default class UsersList extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost/ci/welcome/get_user')
+        axios.get('http://localhost/ci/api/user')
             .then(response => {
                 this.setState({users: response.data});
                 this.setState({datavalues:{

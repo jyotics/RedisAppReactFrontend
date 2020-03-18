@@ -108,7 +108,7 @@ export default class CreateUser extends Component {
 
         	}
 
-	         axios.post('http://localhost/ci/welcome/add_user',newUser)
+	         axios.post('http://localhost/ci/api/user/create',newUser)
              .then(res => {
                     const code = res.data.status;
                     if(code == 203){
